@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Adapted by William Hobbs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://wihobbs.github.io/}{\Large William Hobbs}} & Email : \href{mailto:william.ira.hobbs@gmail.com}{william.ira.hobbs@gmail.com}\\
+  \href{http://wihobbs.github.io/}{http://wihobbs.github.io/} & Mobile : +1-803-917-7750 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of South Carolina}{Columbia, SC}
+      {Bachelor of Science in Computer Science (Honors College);  GPA: 3.63}{Dec. 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {University of South Carolina}{Columbia, SC}
+      {Bioinformatics and Game Design Research Assistant}{Sept. 2021 -- present}
+      \resumeItemListStart
+        \resumeItem{Computational Biology}
+          {Analyzing image data of lung sputum collected by the University of New Mexico School of Medicine. Recipient of the SC Student-Initiated Research Projects grant from the National Institutes of Health.}
+        \resumeItem{Machine Learning}
+          {Utilizing machine learning techniques including Convolutional Neural Networks and Python libraries such as OpenCV and TensorFlow to train networks that can analyze cancerous cell slides.}
+        \resumeItem{Game Design and Outreach}
+          {Developing a curriculum funded by NASA to teach the Godot Engine to high school students throughout the state of South Carolina.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lawrence Berkeley National Laboratory}{Berkeley, CA}
+      {High-Performance Computing Intern}{June 2021 -- Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{Supercomputing Systems}
+          {Learned about the hardware, software, and various pieces of infrastructure that made up the Cori system at the National Energy Research Scientific Computing Center. Cori is currently the 30th most powerful supercomputer in the world.}
+        \resumeItem{Novel Technologies}
+          {Ported the Flux Framework (developed by Lawrence Livermore National Laboratory) onto NERSC's Cori system. Used specialized HPC software such as Shifter (containerization), Spack (package management), Process Management Interface for multi-node jobs, and the Cray Linux Environment. }
+         \resumeItem{Workflow Management}
+          {Reviewed existing tools for automated management of scientific workflows to determine future workflow needs of NERSC users.}
+        \resumeItem{Technical Documentation}
+          {Wrote a page for the NERSC Technical Documentation on using the Flux Framework on the Cori System. Flux is a resource management framework for supercomputers with significant job submission control for users.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {University of South Carolina}{Columbia, SC}
+      {Data Science and Civil Engineering Research Assistant}{June 2020 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{Data Analysis}
+          {blahblahblah.}
+        \resumeItem{Data Cleaning}
+          {blahblahblah.}
+        \resumeItem{Engineering Subject Research}
+          {Consulted on Acoustic Emission (AE) data collected from concrete degradation. Used Python and R to prepare/analyze data on concrete and other structures.}
+        \resumeItem{Presentation \& Reports}
+          {Presented at the Massachusetts Institute of Technology Undergraduate Research Technology Conference on machine learning uncertainty and bias for education/psychology projects.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Personal Website}
+      {Blog and information about my current projects. Written using Ghost.}
+    \resumeSubItem{Daily Workout "App"}
+      {A simple Python code that I use to push my daily workout statistics to a mongoDB server.}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROJECTS-----------------
+\section{Activities}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Office of Undergraduate Research}
+      {Campus Ambassador for OUR - conduct presentations to recruit freshman undergraduates for research opportunities.}
+    \resumeSubItem{Association for Computing Machinery}
+      {Chair of the USC Student Chapter - coordinate guest speakers, budgeting, donor relations, and biannual University-wide Code-A-Thon.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, C/C++, Java, MATLAB}
+    \resumeSubItem{Technologies}{Docker, Git, Bash/Zsh (Linux Environment), PyPlot, Pandas, Microsoft Office Suite, \LaTeX}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
